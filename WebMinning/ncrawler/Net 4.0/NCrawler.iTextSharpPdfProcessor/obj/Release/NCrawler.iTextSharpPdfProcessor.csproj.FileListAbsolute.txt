@@ -1,0 +1,9 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\bin\Release\NCrawler.iTextSharpPdfProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\bin\Release\NCrawler.iTextSharpPdfProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\bin\Release\itextsharp.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\obj\Release\NCrawler.iTextSharpPdfProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.iTextSharpPdfProcessor\obj\Release\NCrawler.iTextSharpPdfProcessor.pdb

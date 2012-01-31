@@ -1,0 +1,8 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\bin\Release\NCrawler.IsolatedStorageServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\bin\Release\NCrawler.IsolatedStorageServices.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\obj\Release\NCrawler.IsolatedStorageServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IsolatedStorageServices\obj\Release\NCrawler.IsolatedStorageServices.pdb

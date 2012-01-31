@@ -1,0 +1,9 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\bin\Release\NCrawler.MP3Processor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\bin\Release\NCrawler.MP3Processor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\bin\Release\UltraID3Lib.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\obj\Release\NCrawler.MP3Processor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.MP3Processor\obj\Release\NCrawler.MP3Processor.pdb

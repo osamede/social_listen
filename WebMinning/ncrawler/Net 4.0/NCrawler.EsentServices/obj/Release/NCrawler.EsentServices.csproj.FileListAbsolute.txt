@@ -1,0 +1,9 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\bin\Release\NCrawler.EsentServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\bin\Release\NCrawler.EsentServices.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\bin\Release\Esent.Interop.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\obj\Release\NCrawler.EsentServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.EsentServices\obj\Release\NCrawler.EsentServices.pdb

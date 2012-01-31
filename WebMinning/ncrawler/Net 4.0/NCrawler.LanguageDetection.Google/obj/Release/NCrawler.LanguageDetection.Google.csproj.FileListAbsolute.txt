@@ -1,0 +1,8 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\bin\Release\NCrawler.LanguageDetection.Google.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\bin\Release\NCrawler.LanguageDetection.Google.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\obj\Release\NCrawler.LanguageDetection.Google.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.LanguageDetection.Google\obj\Release\NCrawler.LanguageDetection.Google.pdb

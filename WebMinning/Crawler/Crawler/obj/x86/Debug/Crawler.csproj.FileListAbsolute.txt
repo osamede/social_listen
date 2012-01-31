@@ -1,0 +1,2 @@
+E:\Learn\Repository\WebMinning\Crawler\Crawler\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\Crawler.exe.config

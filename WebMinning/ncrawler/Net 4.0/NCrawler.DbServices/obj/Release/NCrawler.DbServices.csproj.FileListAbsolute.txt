@@ -1,0 +1,9 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\obj\Release\NCrawler.DbServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\obj\Release\NCrawler.DbServices.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\bin\Release\NCrawler.DbServices.dll.config
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\bin\Release\NCrawler.DbServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices\bin\Release\NCrawler.DbServices.pdb

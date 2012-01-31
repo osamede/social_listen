@@ -1,0 +1,13 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawl.exe.config
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawl.exe
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawl.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\HtmlAgilityPack.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawler.HtmlProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawler.HtmlProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\bin\Release\HtmlAgilityPack.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\obj\x86\Release\NCrawl.exe
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.Console\obj\x86\Release\NCrawl.pdb

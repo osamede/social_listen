@@ -1,0 +1,6 @@
+E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler\bin\Debug\NCrawler.dll
+E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler\bin\Debug\NCrawler.pdb
+E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler\bin\Debug\Autofac.dll
+E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler\obj\Debug\ResolveAssemblyReference.cache
+E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler\obj\Debug\NCrawler.dll
+E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler\obj\Debug\NCrawler.pdb

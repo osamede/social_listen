@@ -1,0 +1,8 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db_Script.PreDeployment.sql
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db_Script.PostDeployment.sql
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db_Database.sqlsettings
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db_Database.sqldeployment
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db_Database.sqlcmdvars
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db.deploymanifest
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\sql\release\NCrawler.DbServices.Db.dbschema
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.DbServices.Db\obj\Release\NCrawler.DbServices.Db.dbschema

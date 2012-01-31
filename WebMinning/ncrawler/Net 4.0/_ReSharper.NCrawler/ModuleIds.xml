@@ -1,0 +1,14 @@
+<Modules>
+  <Module PersistentId="A8ADB9E8-359E-4CFB-97D7-59E1E705DE04" ModuleId="NCrawler.HtmlProcessor" />
+  <Module PersistentId="5E4DF149-F650-4152-8410-586FB9CCF644" ModuleId="NCrawler" />
+  <Module PersistentId="5BC126AF-4E49-4DEA-B013-E05CBC2C67F4" ModuleId="NCrawler.Console" />
+  <Module PersistentId="3FB98863-77C5-4459-B9BF-2AF1C904323C" ModuleId="NCrawler.Demo" />
+  <Module PersistentId="8BC9BDCE-64E8-40D8-8691-8BC1DB8AF21E" ModuleId="NCrawler.Db4oServices" />
+  <Module PersistentId="D82B1354-F267-4C35-9FC0-6910A5C44304" ModuleId="NCrawler.EsentServices" />
+  <Module PersistentId="944F9961-7B7D-4384-9946-705237E7E195" ModuleId="NCrawler.FileStorageServices" />
+  <Module PersistentId="791A3998-A352-4DE8-88C7-6EE5C6FF1668" ModuleId="NCrawler.IsolatedStorageServices" />
+  <Module PersistentId="0F514E25-5C5E-4F3D-9F4B-73EE5C7B6986" ModuleId="NCrawler.DbServices" />
+  <Module PersistentId="1CC6DC28-0B0B-445D-8AE3-07F9823A9036" ModuleId="NCrawler.iTextSharpPdfProcessor" />
+  <Module PersistentId="0E707ADD-8F93-4E65-BAE7-534D4C844060" ModuleId="NCrawler.LanguageDetection.Google" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+</Modules>

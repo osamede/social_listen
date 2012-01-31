@@ -1,0 +1,10 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\NCrawler.IFilterProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\NCrawler.IFilterProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\EPocalipse.IFilter.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\bin\Release\EPocalipse.IFilter.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\obj\Release\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\obj\Release\NCrawler.IFilterProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.IFilterProcessor\obj\Release\NCrawler.IFilterProcessor.pdb

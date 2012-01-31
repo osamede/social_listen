@@ -1,0 +1,14 @@
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\Sina-NewsContent.xslt
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\Crawler.exe.config
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\Crawler.exe
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\Crawler.pdb
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\Autofac.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\HtmlAgilityPack.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\NCrawler.DbServices.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\NCrawler.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\NCrawler.HtmlProcessor.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\NCrawler.IFilterProcessor.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\bin\Debug\EPocalipse.IFilter.dll
+E:\Learn\Repository\WebMinning\Crawler\Crawler\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\Crawler\Crawler\obj\x86\Debug\Crawler.exe
+E:\Learn\Repository\WebMinning\Crawler\Crawler\obj\x86\Debug\Crawler.pdb
