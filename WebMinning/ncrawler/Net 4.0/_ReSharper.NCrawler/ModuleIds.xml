@@ -11,4 +11,10 @@
   <Module PersistentId="1CC6DC28-0B0B-445D-8AE3-07F9823A9036" ModuleId="NCrawler.iTextSharpPdfProcessor" />
   <Module PersistentId="0E707ADD-8F93-4E65-BAE7-534D4C844060" ModuleId="NCrawler.LanguageDetection.Google" />
   <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="E565C692-2122-4B7D-B467-4B965BFD72B1" ModuleId="NCrawler.Test" />
+  <Module PersistentId="Autofac, Version=2.1.14.854, Culture=neutral, PublicKeyToken=17863af14b0044da" ModuleId="Autofac" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib_1" />
+  <Module PersistentId="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System" />
+  <Module PersistentId="8DBF9F2F-A8BD-45B1-8750-C7CB63611425" ModuleId="NCrawler.MP3Processor" />
+  <Module PersistentId="B6E2597F-59A6-4E9D-B56C-97EC2128E1B4" ModuleId="LRCrawler" />
 </Modules>

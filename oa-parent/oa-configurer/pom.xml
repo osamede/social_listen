@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 
+		TODO: will make project a child module when we are ready to 
+		replace oa-installer 
+	-->
+	<!--
+	<parent>
+		<groupId>org.openapplicant</groupId>
+		<artifactId>oa-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>oa-configurer</artifactId>
+	<packaging>jar</packaging>
+	-->
+	<groupId>org.openapplicant</groupId>
+	<artifactId>oa-configurer</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+  
+	<name>Open Applicant Configurer</name>
+	<url>http://openapplicant.org</url>
+  
+	<dependencies>
+		<dependency>
+		    <groupId>org.codehaus.groovy.maven.runtime</groupId>
+		    <artifactId>gmaven-runtime-1.6</artifactId>
+		    <version>1.0-rc-5</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.6</version>
+		</dependency>
+		<dependency>
+		  <groupId>junit</groupId>
+		  <artifactId>junit</artifactId>
+		  <version>4.4</version>
+		  <scope>test</scope>
+		</dependency>
+	</dependencies>
+  
+  	<build>
+	  	<plugins>
+	  		<plugin>
+	  			<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+	            <groupId>org.codehaus.groovy.maven</groupId>
+	            <artifactId>gmaven-plugin</artifactId>
+	            <executions>
+	                <execution>
+	                    <goals>
+	                        <goal>generateStubs</goal>
+	                        <goal>compile</goal>
+	                        <goal>generateTestStubs</goal>
+	                        <goal>testCompile</goal>
+	                    </goals>
+	                </execution>
+	            </executions>
+	        </plugin>
+			<!-- add the war resource -->
+		  	<plugin>
+		  		<groupId>org.apache.maven.plugins</groupId>
+       			<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-war</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>oa-web</artifactId>
+									<version>${project.version}</version>
+									<type>war</type>
+									<overWrite>false</overWrite>
+									<outputDirectory>${project.build.outputDirectory}</outputDirectory>
+									<destFileName>openapplicant.war</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>package-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attached</goal>
+						</goals>
+						<configuration>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<archive>
+								<manifest>
+									<mainClass>org.openapplicant.configurer.main.Main</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

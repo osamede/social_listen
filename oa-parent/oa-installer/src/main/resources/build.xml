@@ -1,0 +1,9 @@
+<project name="Open Applicant WAR Builder">
+	
+	<target name="echo">
+		<touch file="/tmp/mrw.touch"></touch>
+	</target>
+
+	
+</project>
+	
