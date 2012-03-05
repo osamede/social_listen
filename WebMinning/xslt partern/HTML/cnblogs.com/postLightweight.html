@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>asp.net mvc2网站部署在IIS6的方法 - 博客文库 - 博客园</title> 
+<link href="/style/archive.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="http://common.cnblogs.com/css/shCore.css"/>
+<link type="text/css" rel="stylesheet" href="http://common.cnblogs.com/css/shThemeDefault.css"/>
+<script src="http://common.cnblogs.com/script/jquery.js" type="text/javascript"></script>
+<script src="/js/archive.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="top_nav"><a href="http://www.cnblogs.com">&laquo; 博客园首页</a></div>
+<div id="wrapper">
+<h1 class="contents_header">asp.net mvc2网站部署在IIS6的方法</h1>
+<div class="contents_info">
+	作者：<a href="http://www.cnblogs.com/samsonhuang/" target="_blank">我思故我在...</a>&nbsp;&nbsp;来源：<a href="http://www.cnblogs.com" target="_blank">博客园</a>&nbsp;&nbsp;发布时间：2012-02-01 14:55&nbsp;&nbsp;阅读：871 次&nbsp;&nbsp;<a href="http://www.cnblogs.com/samsonhuang/archive/2012/02/01/2334590.html">原文链接</a>&nbsp;&nbsp;
+	<a href="javascript:add_to_wz()" class="graylink">[收藏]</a>&nbsp;&nbsp;
+</div>
+<div class="contents_main">
+	<p>部署环境： Server 2003 +IIS6</p>
+<p>1.先安装好IIS6，再安装.net framework 4.0和asp.net mvc 安装包(主要是里面的一个dll，不安装也可以，只需要找到这个dll，将mvc.dll 放入网站bin目录下，这个dll文件的默认路径是C:\Program Files\Microsoft ASP.NET\ASP.NET MVC 2\Assemblies\System.Web.Mvc.dll)</p>
+<p>&nbsp;</p>
+<p>2.在IIS中新建网站设置web主目录，这个不详细说了，接着说重点</p>
+<p>&nbsp;</p>
+<p>3.在发布的网站上右击【属性】---【主目录】----【配置】，在弹出的【应用程序配置】窗口中点击【添加】，点击【浏览】将&ldquo;可执行文件&rdquo;设置为&ldquo;<span style="color: #ff0000;">C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\aspnet_isapi.dll</span>&rdquo;，&ldquo;扩展名&rdquo;设置为".mvc"，取消【<span style="color: #ff0000;">确认文件是否存在</span>】</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/310852/2012020114280143.jpg" alt="" /></p>
+<p>然后在下面点击【插入】，同样选择aspnet_isapi.dll，取消【确认文件是否存在】。</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/310852/2012020114294364.jpg" alt="" /></p>
+<p>在发布的网站上右击【属性】--【APS.NET】，将【ASP.NET version】设置为4.0.30319</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/310852/2012020114512054.jpg" alt="" /></p>
+<p>&nbsp;</p>
+<p>4.在【Web服务扩展】中设置ASP.NET v4.0.30319 为允许</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/310852/2012020114334334.jpg" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;以上配置完成后就大功告成了，以上亲测成功，若有问题欢迎留言一起探讨！</p>
+<p>&nbsp;</p>
+<p>PS:<span style="color: #ff0000;">若先装的.net framework 4.0，后装的IIS，需要注册aspnet到IIS，方法如下：</span></p>
+<p><strong>注意：要以管理员的身份运行</strong></p>
+<p>启动cmd窗口 (win键+R ) &nbsp;,找到 4.0所在的目录,本人机器目录是<br />&nbsp;C:\Windows\Microsoft.NET\Framework\v4.0.30319</p>
+<p>启动CMD进入上面的目录C:\Windows\Microsoft.NET\Framework\v4.0.30319</p>
+<p>运行 &nbsp;aspnet_regiis.exe -i</p>
+<p>稍等一会,&nbsp;aspnet_regiis 注册成功</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/310852/2012020114444698.jpg" alt="" /></p>
+<p>&nbsp;</p>
+    <div class="source_link_bottom"><a href="http://www.cnblogs.com/samsonhuang/archive/2012/02/01/2334590.html">》点击查看原文...</a></div>
+    <div class="ad_img"><a href="http://job.cnblogs.com"><img src="http://static.cnblogs.com/images/a4/banner_job.gif" alt=""/></a></div>
+</div>			
+</div>
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+    try {
+        GS_googleAddAdSenseService("ca-pub-4210569241504288");
+        GS_googleEnableAllServices();
+    } catch (e) { }
+</script>
+<script type='text/javascript'>
+    try {
+        GA_googleAddSlot("ca-pub-4210569241504288", "cnblogs_archive_top");
+        GA_googleAddSlot("ca-pub-4210569241504288", "cnblogs_archive_bottom");
+    } catch (e) { }
+</script>
+<script type='text/javascript'>
+    try {
+        GA_googleFetchAds();
+    } catch (e) { }
+</script>
+<div id="ad_top">
+<script type='text/javascript'>
+    try {
+        GA_googleFillSlot("cnblogs_archive_top");
+    } catch (e) { }
+</script>
+</div>
+<div id="ad_bottom">
+<script type='text/javascript'>
+    try {
+        GA_googleFillSlot("cnblogs_archive_bottom");
+    } catch (e) { }
+</script>
+</div>
+<script type="text/javascript" src="http://common.cnblogs.com/script/shCore.js"></script>
+<script type="text/javascript" src="http://common.cnblogs.com/script/shLanguage.js"></script>
+<script type="text/javascript">
+    try {
+        SyntaxHighlighter.config.clipboardSwf = 'http://common.cnblogs.com/flash/clipboard.swf';
+        SyntaxHighlighter.all();
+    } catch (e) { }
+</script> 
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F02fd5f9634457187877fa1d896d9e100' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<span style="display:none"><script src="http://s15.cnzz.com/stat.php?id=2325484&amp;web_id=2325484" type="text/javascript"></script></span> 
+</body>
+</html>
+
