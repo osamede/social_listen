@@ -1,0 +1,8 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\bin\Debug\NCrawler.FileStorageServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\bin\Debug\NCrawler.FileStorageServices.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\bin\Debug\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\bin\Debug\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\bin\Debug\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\obj\x86\Debug\NCrawler.FileStorageServices.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.FileStorageServices\obj\x86\Debug\NCrawler.FileStorageServices.pdb

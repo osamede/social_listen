@@ -1,0 +1,12 @@
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\NCrawler.SitemapProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\NCrawler.SitemapProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\NCrawler.HtmlProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\HtmlAgilityPack.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\NCrawler.HtmlProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\bin\Debug\HtmlAgilityPack.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\obj\Debug\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\obj\Debug\NCrawler.SitemapProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.SitemapProcessor\obj\Debug\NCrawler.SitemapProcessor.pdb

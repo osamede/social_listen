@@ -1,0 +1,157 @@
+2012-02-08 14:25:46,822 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/admin/EditPosts.aspx?postid=2144316, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:46,855 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/AddToFavorite.aspx?id=2321722, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:46,876 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2101479, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:46,896 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/rss, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:46,917 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/rsd.xml, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:46,949 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/tag/AgileEAS/, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:46,995 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditPosts.aspx?opt=1, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,023 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/chenxizhang/archive/2011/11/08/2241585.html, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,048 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/admin/EditPosts.aspx?postid=2091752, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,073 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/AddToFavorite.aspx?id=2230862, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,098 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2099542, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,125 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/admin/EditPosts.aspx?postid=2319775, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,155 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2324646, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,188 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2098666, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,235 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2098666, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,267 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/admin/EditPosts.aspx?postid=2238968, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,291 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/AddToFavorite.aspx?id=2139120, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,315 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/admin/EditPosts.aspx?postid=2139120, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,317 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2044900, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,350 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/sufei/rss, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,373 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2044900, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,376 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/ywqu/archive/2010/10/30.html, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,377 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2025654, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,412 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/AddToFavorite.aspx?id=2207063, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,448 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/AddToFavorite.aspx?id=2318221, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,451 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/admin/EditPosts.aspx?postid=2207063, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,452 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/admin/EditPosts.aspx?postid=2318221, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,483 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2025654, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,505 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/articles/2306040.html, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,509 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2306040, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,515 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/sufei/admin/EditPosts.aspx?opt=1, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,541 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/AddToFavorite.aspx?id=2116955, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,560 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2304686, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,563 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/admin/EditPosts.aspx?postid=2116955, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,565 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/AddToFavorite.aspx?id=2315214, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,595 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/sufei/admin/EditPosts.aspx, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,621 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/beniao/rss, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,624 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2024878, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,626 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2024878, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,655 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/AddToFavorite.aspx?id=2112510, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,672 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/admin/EditPosts.aspx?postid=2315214, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,675 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/yukaizhao/tag/performance/, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,677 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2304682, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,711 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/admin/EditPosts.aspx?postid=2112510, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,755 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/AddToFavorite.aspx?id=2179055, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,761 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/beniao/admin/EditPosts.aspx, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,761 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2022502, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,805 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2022502, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,816 [165] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/admin/EditPosts.aspx?postid=2179055, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,850 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2304673, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,854 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/AddToFavorite.aspx?id=2110391, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,855 [164] ERROR  - Download exception while downloading http://www.cnblogs.com/eastjade/admin/EditPosts.aspx?postid=2110391, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:47,916 [163] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2304666, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,191 [15] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2205214, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,195 [165] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/AddToFavorite.aspx?id=2111868, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,198 [15] ERROR  - Download exception while downloading http://www.cnblogs.com/Darren_code/admin/EditPosts.aspx?postid=2111868, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,251 [165] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/AddToFavorite.aspx?id=2019907, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,276 [165] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/admin/EditPosts.aspx?postid=2019907, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,280 [15] ERROR  - Download exception while downloading http://www.cnblogs.com/chenkai/AddToFavorite.aspx?id=2312024, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,282 [165] ERROR  - Download exception while downloading http://www.cnblogs.com/beniao/admin/EditArticles.aspx?postid=2290228, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:25:53,316 [176] ERROR  - Download exception while downloading http://www.cnblogs.com/beniao/archive/2011/11/22.html, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:26:52,319 [291] ERROR  - Download exception while downloading http://www.cnblogs.com/TerryBlog/tag/¿ªÔ´/, error was System.TimeoutException: Connection Timeout
+2012-02-08 14:26:57,320 [301] ERROR  - Download exception while downloading http://www.cnblogs.com/huyong/admin/EditArticles.aspx?postid=2176859, error was System.TimeoutException: Connection Timeout
+2012-02-08 15:52:34,792 [1119] ERROR  - Download exception while downloading http://www.cnblogs.com/legendxian/archive/2011/03.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 15:52:42,293 [1070] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/jasenkin/archive/2011/02/15/datarow_to_entity_or_generic_type.html, error was System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Text.StringBuilder.ToString()
+   at System.IO.StreamReader.ReadToEnd()
+   at HtmlAgilityPack.HtmlDocument.DetectEncoding(TextReader reader)
+   at HtmlAgilityPack.HtmlDocument.DetectEncoding(Stream stream)
+   at NCrawler.HtmlProcessor.HtmlDocumentProcessor.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\HtmlDocumentProcessor.cs:line 71
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 15:53:08,569 [1123] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/daizhj/archive/2011/04/29/mongos_command_source_code.html, error was System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Text.StringBuilder.ToString()
+   at System.IO.StreamReader.ReadToEnd()
+   at HtmlAgilityPack.HtmlDocument.Load(TextReader reader)
+   at HtmlAgilityPack.HtmlDocument.Load(Stream stream, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at NCrawler.HtmlProcessor.HtmlDocumentProcessor.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\HtmlDocumentProcessor.cs:line 75
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:10:55,129 [290] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/realdigit/wlwmanifest.xml, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:10:56,339 [362] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/BearsTaR/admin/EditPosts.aspx?opt=1, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:10:56,812 [359] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/n-pei/admin/EditPosts.aspx?opt=1, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:10:58,136 [376] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/BearsTaR/admin/EditPosts.aspx, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:10:58,136 [392] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/yjmyzz/rss, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:10:58,198 [361] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/huangxincheng/archive/2012/01/07/2315945.html, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:00,966 [369] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/huangxincheng/archive/2012/01/07.html, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:00,968 [406] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/huangxincheng/archive/2012/01/03.html, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,201 [384] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/yjmyzz/customcss.aspx?id=31164, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,344 [398] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/BearsTaR/archive/2010/05/12/web_performance.html, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,344 [411] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/virusswb/rss, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,201 [333] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/huangxincheng/wlwmanifest.xml, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,003 [402] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/n-pei/MyPosts.html, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,201 [403] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/yjmyzz/rsd.xml, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,201 [371] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/realdigit/archive/2011/05/11.html, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:11:01,344 [394] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/n-pei/admin/EditPosts.aspx, error was System.NullReferenceException: Object reference not set to an instance of an object.
+   at LRCrawler.PipeLine.ParseByTemplate.SelectTemplate(PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 40
+   at LRCrawler.PipeLine.ParseByTemplate.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\Crawler\Crawler\PipeLine\ParseByTemplate.cs:line 27
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273
+2012-02-08 16:13:28,410 [508] ERROR  - Exception while processing pipeline for http://www.cnblogs.com/yjmyzz/archive/2011/08/07.html, error was System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Text.StringBuilder.ToString()
+   at System.IO.StreamReader.ReadToEnd()
+   at HtmlAgilityPack.HtmlDocument.DetectEncoding(TextReader reader)
+   at HtmlAgilityPack.HtmlDocument.DetectEncoding(Stream stream)
+   at NCrawler.HtmlProcessor.HtmlDocumentProcessor.Process(Crawler crawler, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\HtmlDocumentProcessor.cs:line 71
+   at NCrawler.Crawler.ExecutePipeLineStep(IPipelineStep pipelineStep, PropertyBag propertyBag) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Crawler.cs:line 273

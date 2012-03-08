@@ -1,0 +1,126 @@
+2012-02-08 14:41:32,196 [567] ERROR  - Download exception while downloading http://www.cnblogs.com/XmNotes/archive/2011/12/30/2307809.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:41:32,258 [567] ERROR  - Download exception while downloading http://www.cnblogs.com/skyivben/archive/2011/01/25/1944977.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:41:37,696 [578] ERROR  - Download exception while downloading http://www.cnblogs.com/skyivben/category/110335.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:41:37,800 [578] ERROR  - Download exception while downloading http://www.cnblogs.com/skyivben/RecentComments.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:41:37,907 [578] ERROR  - Download exception while downloading http://www.cnblogs.com/wengyuli/archive/2011/04/29/wcf-exception-process.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:41:58,695 [616] ERROR  - Download exception while downloading http://www.cnblogs.com/LoveJenny/archive/2011/06.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:42:12,697 [643] ERROR  - Download exception while downloading http://www.cnblogs.com/liping13599168/archive/2011/03/31/2000320.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:42:13,697 [645] ERROR  - Download exception while downloading http://www.cnblogs.com/jyk/archive/2011/05/05/2037538.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:42:20,069 [398] ERROR  - Download exception while downloading http://www.cnblogs.com/jyk/archive/2009/10/28/1591680.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:43:14,200 [769] ERROR  - Download exception while downloading http://www.cnblogs.com/sufei/archive/2010/07/13/1776182.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:43:14,216 [769] ERROR  - Download exception while downloading http://www.cnblogs.com/skyivben/archive/2008/07/13/1241681.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:43:17,701 [775] ERROR  - Download exception while downloading http://www.cnblogs.com/sufei/archive/2010/07/22/1783168.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:43:18,701 [777] ERROR  - Download exception while downloading http://www.cnblogs.com/wengyuli/archive/2011/12/23/webcast.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81
+2012-02-08 14:43:39,288 [723] ERROR  - Download exception while downloading http://www.cnblogs.com/skyivben/archive/2011/07.html, error was System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.PooledStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginReadWithoutValidation(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at System.Net.ConnectStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at NCrawler.Extensions.StreamExtensions.<>c__DisplayClass4.<CopyToStreamAsync>b__1(IAsyncResult innerAsyncResult, Boolean innerIsTimedOut) in E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler\Extensions\StreamExtensions.cs:line 81

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.openapplicant.dao.hibernate.EmailTemplateDAOTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.221 sec
