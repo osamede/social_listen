@@ -24,7 +24,24 @@ namespace LRCrawler.Console
     using NCrawler.Utils;
     using LRCrawler.Extension;
     using LRCrawler.PipeLine;
+    using System.Net;
+    using log4net;
+    using LRCrawler.Service;
+    using Autofac;
+    using Autofac.Builder;
+    using NCrawler.Events;
 
+    public class Filter:IFilter
+    {
+      public  bool Match(Uri uri, CrawlStep referrer)
+        {
+            if (!Regex.IsMatch(uri.AbsoluteUri, @"http://.*\.cnblogs\.com/.*"))
+            {
+                return true;
+            }
+          return false;
+        }
+    }
     /// <summary>
     /// The program.
     /// </summary>
@@ -32,17 +49,14 @@ namespace LRCrawler.Console
     {
         #region Constants and Fields
 
-        /// <summary>
-        /// The extensions to skip.
-        /// </summary>
-        public static IFilter[] ExtensionsToSkip = new[]
+
+        public static IFilter[] SiteToCrawl = new[]
             {
                 (RegexFilter)
                 new Regex(
-                    @"(\.jpg|\.css|\.js|\.gif|\.jpeg|\.png|\.ico)", 
+                    @"http://.*\.cnblogs\.com/.*", 
                     RegexOptions.Compiled | RegexOptions.CultureInvariant | RegexOptions.IgnoreCase)
             };
-
         #endregion
 
         #region Public Methods
@@ -52,34 +66,43 @@ namespace LRCrawler.Console
         /// </summary>
         public static void Run()
         {
-           Console.Out.WriteLine("Simple crawl demo using local database a storage");
+           ServicePointManager.MaxServicePoints = 999999;
+           ServicePointManager.DefaultConnectionLimit = 999999;
+           ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls;
+           ServicePointManager.CheckCertificateRevocationList = true;
+           ServicePointManager.EnableDnsRoundRobin = true;
 
-            // Setup crawler to crawl http://ncrawler.codeplex.com
-            // with 1 thread adhering to robot rules, and maximum depth
-            // of 2 with 4 pipeline steps:
-            // 	* Step 1 - The Html Processor, parses and extracts links, text and more from html
-            // * Step 2 - Processes PDF files, extracting text
-            // * Step 3 - Try to determine language based on page, based on text extraction, using google language detection
-            // * Step 4 - Dump the information to the console, this is a custom step, see the DumperStep class
-            DbServicesModule.Setup(false);
+           IFilter[] ExtensionsToSkip = new IFilter[2];
+            ExtensionsToSkip[0] = new Filter();
+            ExtensionsToSkip[1] =
+                (RegexFilter)
+                new Regex(
+                    @"(\.jpg|\.css|\.js|\.gif|\.jpeg|\.png|\.ico)",
+                    RegexOptions.Compiled | RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+            DbServicesModule.Setup(true);
+
+            NCrawlerModule.Register(
+               builder => builder.Register(
+                  c=>new Log4NetLogService()).As<NCrawler.Interfaces.ILog>().InstancePerDependency());
+
             using (
                 var c = new Crawler(
-                    new Uri("http://news.sina.com.cn"), 
+                    new Uri("http://www.cnblogs.com"), 
                     new HtmlDocumentProcessor(), 
-                    // Process html
-                    new DumperStep(),
                     new ParseByTemplate()
                     )
                     {
                         // Custom step to visualize crawl
-                        MaximumThreadCount = 2, 
-                        MaximumCrawlDepth = 10, 
+                        MaximumThreadCount = 1, 
+                        MaximumCrawlDepth = 50, 
                         ExcludeFilter = ExtensionsToSkip, 
-                       
+                       ConnectionTimeout=new TimeSpan(0,1,0),
+
                     })
             {
-               
-                // Begin crawl
+                c.AfterDownload += CrawlerAfterDownload;
+                c.PipelineException += CrawlerPipelineException;
+                c.DownloadException += CrawlerDownloadException;
                 c.Crawl();
             }
         }
@@ -87,60 +110,39 @@ namespace LRCrawler.Console
         #endregion
 
         #region Methods
-
-        /// <summary>
-        /// The main.
-        /// </summary>
-        /// <param name="args">
-        /// The args.
-        /// </param>
-        private static void Main(string[] args)
+        private static void CrawlerAfterDownload(object sender, AfterDownloadEventArgs e)
         {
-            Run();
+                System.Console.Out.WriteLine("{0} in {1}".FormatWith(e.CrawlStep.Uri, e.Response.DownloadTime.TotalSeconds));
         }
 
-        #endregion
-    }
-
-    /// <summary>
-    /// The dumper step.
-    /// </summary>
-    internal class DumperStep : IPipelineStep
-    {
-        #region Public Methods
-
-        /// <summary>
-        /// The process.
-        /// </summary>
-        /// <param name="crawler">
-        /// The crawler.
-        /// </param>
-        /// <param name="propertyBag">
-        /// The property bag.
-        /// </param>
-        public void Process(Crawler crawler, PropertyBag propertyBag)
+        private static void CrawlerDownloadException(object sender, DownloadExceptionEventArgs e)
         {
-            var contentCulture = (CultureInfo)propertyBag["LanguageCulture"].Value;
-            string cultureDisplayValue = "N/A";
-            if (!contentCulture.IsNull())
+            if (e.Exception is WebException)
             {
-                cultureDisplayValue = contentCulture.DisplayName;
+                WebException webException = (WebException)e.Exception;
+                System.Console.Out.WriteLine("Error downloading '{0}': {1}; {2} - Continueing crawl", e.CrawlStep.Uri, webException.Status, webException.Source);
             }
-
-            lock (this)
+            else
             {
-               Console.Out.WriteLine(ConsoleColor.Gray, "Url: {0}", propertyBag.Step.Uri);
-               Console.Out.WriteLine(ConsoleColor.DarkGreen, "\tContent type: {0}", propertyBag.ContentType);
-               Console.Out.WriteLine(
-                    ConsoleColor.DarkGreen, 
-                    "\tContent length: {0}", 
-                    propertyBag.Text.IsNull() ? 0 : propertyBag.Text.Length);
-                Console.Out.WriteLine(ConsoleColor.DarkGreen, "\tDepth: {0}", propertyBag.Step.Depth);
-               Console.Out.WriteLine(ConsoleColor.DarkGreen, "\tCulture: {0}", cultureDisplayValue);
-                Console.Out.WriteLine(
-                    ConsoleColor.DarkGreen, "\tThreadId: {0}", Thread.CurrentThread.ManagedThreadId);
-                Console.Out.WriteLine(ConsoleColor.DarkGreen, "\tThread Count: {0}", crawler.ThreadsInUse);
-               Console.Out.WriteLine();
+                System.Console.Out.WriteLine("Error downloading '{0}': {1} - Continueing crawl", e.CrawlStep.Uri, e.Exception.Message);
+            }
+        }
+
+        private static void CrawlerPipelineException(object sender, PipelineExceptionEventArgs e)
+        {
+            System.Console.Out.WriteLine("Error processsing '{0}': {1}", e.PropertyBag.Step.Uri, e.Exception.Message);
+        }
+        private static void Main(string[] args)
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                Thread thread = new Thread(new ThreadStart(Run));
+                thread.Start();
+            }
+            string cmd = Console.ReadLine();
+            while(cmd!="quit")
+            {
+                cmd = Console.ReadLine();
             }
         }
 

@@ -52,8 +52,8 @@ namespace NCrawler.Services
 			request.AllowAutoRedirect = true;
 			request.UserAgent = UserAgent;
 			request.Accept = "*/*";
-			request.KeepAlive = true;
-			request.Pipelined = true;
+			request.KeepAlive = false;
+			request.Pipelined = false;
 			if (ConnectionTimeout.HasValue)
 			{
 				request.Timeout = Convert.ToInt32(ConnectionTimeout.Value.TotalMilliseconds);
@@ -83,18 +83,12 @@ namespace NCrawler.Services
 				requestState.Request = (HttpWebRequest) WebRequest.Create(requestState.CrawlStep.Uri);
 				requestState.Request.Method = requestState.Method.ToString();
 				SetDefaultRequestProperties(requestState.Request);
-				IAsyncResult asyncResult = requestState.Request.BeginGetResponse(null, requestState);
-				asyncResult.FromAsync((ia, isTimeout) =>
-					{
-						if (isTimeout)
-						{
-							DownloadAsync(requestState, new TimeoutException("Connection Timeout"));
-						}
-						else
-						{
-							ResponseCallback<T>(ia);
-						}
-					}, ConnectionTimeout);
+               
+				IAsyncResult asyncResult = requestState.Request.BeginGetResponse(ia=>
+				    {
+                        ResponseCallback<T>(ia);
+				    }
+                    , requestState);
 			}
 			else
 			{
@@ -163,44 +157,49 @@ namespace NCrawler.Services
 			try
 			{
 				HttpWebRequest myHttpWebRequest = requestState.Request;
-				HttpWebResponse response = (HttpWebResponse) myHttpWebRequest.EndGetResponse(asynchronousResult);
+			    HttpWebResponse response = (HttpWebResponse)myHttpWebRequest.EndGetResponse(asynchronousResult);
+                    uint downloadBufferSize = DownloadBufferSize.HasValue
+                                                  ? DownloadBufferSize.Value
+                                                  : DefaultDownloadBufferSize;
+                    requestState.ResponseBuffer = new MemoryStreamWithFileBackingStore(
+                        (int)response.ContentLength,
+                        MaximumDownloadSizeInRam.HasValue ? MaximumDownloadSizeInRam.Value : int.MaxValue,
+                        (int)downloadBufferSize);
 
-				uint downloadBufferSize = DownloadBufferSize.HasValue
-					? DownloadBufferSize.Value
-					: DefaultDownloadBufferSize;
-				requestState.ResponseBuffer = new MemoryStreamWithFileBackingStore((int) response.ContentLength,
-					MaximumDownloadSizeInRam.HasValue ? MaximumDownloadSizeInRam.Value : int.MaxValue,
-					(int) downloadBufferSize);
-
-				// Read the response into a Stream object. 
-				Stream responseStream = response.GetResponseStream();
-				responseStream.CopyToStreamAsync(requestState.ResponseBuffer,
-					(source, dest, exception) =>
-						{
-							if (exception.IsNull())
-							{
-								CallComplete(requestState, response);
-							}
-							else
-							{
-								DownloadAsync(requestState, exception);
-							}
-						},
-					bd =>
-						{
-							if (!requestState.DownloadProgress.IsNull())
-							{
-								requestState.DownloadProgress(new DownloadProgressEventArgs
-									{
-										Referrer = requestState.Referrer,
-										Step = requestState.CrawlStep,
-										BytesReceived = bd,
-										TotalBytesToReceive = (uint) response.ContentLength,
-										DownloadTime = requestState.DownloadTimer.Elapsed,
-									});
-							}
-						},
-					downloadBufferSize, MaximumContentSize, ReadTimeout);
+                    // Read the response into a Stream object. 
+                    Stream responseStream = response.GetResponseStream();
+                    responseStream.CopyToStreamAsync(
+                        requestState.ResponseBuffer,
+                        (source, dest, exception) =>
+                            {
+                                if (exception.IsNull())
+                                { 
+                                    CallComplete(requestState, response);
+                                }
+                                else
+                                {
+                                    DownloadAsync(requestState, exception);
+                                }
+                                response.Close();
+                            },
+                        bd =>
+                            {
+                                if (!requestState.DownloadProgress.IsNull())
+                                {
+                                    requestState.DownloadProgress(
+                                        new DownloadProgressEventArgs
+                                            {
+                                                Referrer = requestState.Referrer,
+                                                Step = requestState.CrawlStep,
+                                                BytesReceived = bd,
+                                                TotalBytesToReceive = (uint)response.ContentLength,
+                                                DownloadTime = requestState.DownloadTimer.Elapsed,
+                                            });
+                                }
+                            },
+                        downloadBufferSize,
+                        MaximumContentSize,
+                        ReadTimeout);  
 			}
 			catch (WebException webException)
 			{
@@ -256,8 +255,13 @@ namespace NCrawler.Services
 					Retry = RetryCount.HasValue ? RetryCount.Value + 1 : 1,
 					Method = method,
 				};
-
-			DownloadAsync(requestState, null);
+            try
+            {
+                DownloadAsync(requestState, null);
+            }catch(Exception ex)
+            {
+                CallComplete(requestState, null);
+            }
 		}
 
 		#endregion

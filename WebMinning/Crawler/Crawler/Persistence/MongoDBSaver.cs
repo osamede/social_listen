@@ -7,43 +7,54 @@
 namespace LRCrawler.Persistence
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using NCrawler;
-    using MongoDB.Driver;
-using System.Xml;
+    using System.Xml;
+
     using MongoDB.Bson;
+    using MongoDB.Driver;
+
+    using NCrawler;
 
     /// <summary>
-    /// TODO: Update summary.
+    ///   TODO: Update summary.
     /// </summary>
     public class MongoDBSaver
     {
         private MongoServer server;
+
         private MongoDatabase db;
+
         public MongoDBSaver()
         {
             string connectionString = "mongodb://localhost";
             this.server = MongoServer.Create(connectionString);
-           this.db = server.GetDatabase("News");
+            this.db = this.server.GetDatabase("News");
         }
 
-
-        public void Save(PropertyBag propertyBag,XmlDocument data)
+        public void Save(PropertyBag propertyBag, XmlDocument data)
         {
-           MongoCollection<BsonDocument> collection= this.db.GetCollection(data.DocumentElement.Name);
-            BsonDocument doc = new BsonDocument();
-            foreach(XmlElement e in data.DocumentElement.ChildNodes)
+            foreach (XmlElement e in data.DocumentElement.ChildNodes)
             {
-                doc.Add(e.Name, new BsonString(e.InnerXml));
+                Save(propertyBag, e);
             }
-            doc.Add("Url",  new BsonString(propertyBag.OriginalUrl));
+        }
+
+        private void Save(PropertyBag propertyBag, XmlElement data)
+        {
+            MongoCollection<BsonDocument> collection = this.db.GetCollection(data.Name);
+            BsonDocument doc = new BsonDocument();
+            foreach (XmlElement e in data.ChildNodes)
+            {
+                if(!string.IsNullOrEmpty(e.InnerXml))
+                {
+                    doc.Add(e.Name, new BsonString(e.InnerXml));
+                }
+            }
+            doc.Add("url", new BsonString(propertyBag.ResponseUri.AbsoluteUri));
             if (propertyBag.Referrer.Uri != null)
             {
-                doc.Add("Referrer", new BsonString(propertyBag.Referrer.Uri.AbsoluteUri));
+                doc.Add("referrer", new BsonString(propertyBag.Referrer.Uri.AbsoluteUri));
             }
-            Console.WriteLine(propertyBag.Title);
+            Console.WriteLine(doc[0].AsString);
             collection.Insert(doc);
         }
     }

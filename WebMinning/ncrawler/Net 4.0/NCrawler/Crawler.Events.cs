@@ -92,7 +92,7 @@ namespace NCrawler
 		/// </summary>
 		private void OnDownloadProgress(DownloadProgressEventArgs downloadProgressEventArgs)
 		{
-			m_Logger.Error("Download progress for step {0}", downloadProgressEventArgs.Step.Uri);
+			m_Logger.Verbose("Download progress for step {0}", downloadProgressEventArgs.Step.Uri);
 			DownloadProgress.ExecuteEvent(this, () => downloadProgressEventArgs);
 		}
 

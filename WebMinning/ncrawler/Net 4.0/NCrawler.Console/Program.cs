@@ -104,9 +104,9 @@ namespace NCrawler.Console
 		    doc.OptionOutputAsXml = true;
 		    doc.OptionAutoCloseOnEnd = true;
 		    doc.OptionFixNestedTags = true;
-		    doc.Load(@"D:\data\141623682749.shtml");
+            doc.Load(@"E:\Learn\Repository\WebMinning\xslt partern\HTML\cnblogs.com\postLightweight.html");
             doc.DocumentNode.SelectNodes("//script").ForEach(e => e.Remove());
-		    doc.Save(@"D:\data\141623682749.xml",Encoding.UTF8);
+            doc.Save(@"E:\Learn\Repository\WebMinning\xslt partern\HTML\cnblogs.com\postLightweight.xml", Encoding.UTF8);
 		}
 
 		#endregion

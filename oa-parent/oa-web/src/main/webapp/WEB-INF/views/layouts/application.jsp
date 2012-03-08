@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+﻿<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -20,7 +20,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title><tiles:getAsString name="title"/></title>
 
 		<script type="text/javascript" src="<c:url value="/dwr/engine.js"/>"></script>

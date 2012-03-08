@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 
 <h2>Free Trial Account Creation</h2>
 

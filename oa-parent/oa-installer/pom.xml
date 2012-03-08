@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
@@ -13,7 +13,13 @@
   
   <name>Open Applicant Installer</name>
   <url>http://openapplicant.org</url>
-  
+  <repositories>
+	 <repository>
+      <id>com.thoughtworks</id>
+      <name>Thoughtworks repository</name>
+      <url>http://snapshots.repository.codehaus.org/</url>
+    </repository>  
+	</repositories>
   <dependencies>
   	<dependency>
 		    <groupId>org.codehaus.groovy.maven.runtime</groupId>

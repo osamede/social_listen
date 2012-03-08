@@ -11,3 +11,16 @@ E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler.HtmlProcessor\
 E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\GenerateResource.write.1.tlog
 E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\NCrawler.HtmlProcessor.dll
 E:\Learn\WebMining\ncrawler-58912\ncrawler-58912\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\NCrawler.HtmlProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\NCrawler.HtmlProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\NCrawler.HtmlProcessor.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\HtmlAgilityPack.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\NCrawler.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\Autofac.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\NCrawler.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\bin\Debug\HtmlAgilityPack.pdb
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\ResolveAssemblyReference.cache
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\NCrawler.HtmlProcessor.Properties.Resources.resources
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\GenerateResource.read.1.tlog
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\GenerateResource.write.1.tlog
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\NCrawler.HtmlProcessor.dll
+E:\Learn\Repository\WebMinning\ncrawler\Net 4.0\NCrawler.HtmlProcessor\obj\Debug\NCrawler.HtmlProcessor.pdb

@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <div id="content">
 
 	<p>Candidates enter the system through one of three ways:</p>

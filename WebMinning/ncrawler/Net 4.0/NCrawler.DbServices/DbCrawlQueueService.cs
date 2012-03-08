@@ -35,35 +35,40 @@ namespace NCrawler.DbServices
 				Return<long, NCrawlerEntitiesDbServices>(e => e.CrawlQueue.Count(q => q.GroupId == m_GroupId));
 		}
 
+	    private static object key = new object();
 		protected override CrawlerQueueEntry PopImpl()
 		{
-			return AspectF.Define.
-				Return<CrawlerQueueEntry, NCrawlerEntitiesDbServices>(e =>
-					{
-						CrawlQueue result = e.CrawlQueue.FirstOrDefault(q => q.GroupId == m_GroupId);
-						if (result.IsNull())
-						{
-							return null;
-						}
+            lock (key)
+            {
+                return AspectF.Define.Return<CrawlerQueueEntry, NCrawlerEntitiesDbServices>(
+                    e =>
+                        {
+                            CrawlQueue result = e.CrawlQueue.FirstOrDefault(q => q.GroupId == m_GroupId);
+                            if (result.IsNull())
+                            {
+                                return null;
+                            }
 
-						e.DeleteObject(result);
-						e.SaveChanges();
-						return result.SerializedData.FromBinary<CrawlerQueueEntry>();
-					});
+                            e.DeleteObject(result);
+                            e.SaveChanges();
+                            return result.SerializedData.FromBinary<CrawlerQueueEntry>();
+                        });
+            }
+
 		}
 
 		protected override void PushImpl(CrawlerQueueEntry crawlerQueueEntry)
 		{
-			AspectF.Define.
-				Do<NCrawlerEntitiesDbServices>(e =>
-					{
-						e.AddToCrawlQueue(new CrawlQueue
-							{
-								GroupId = m_GroupId,
-								SerializedData = crawlerQueueEntry.ToBinary(),
-							});
-						e.SaveChanges();
-					});
+            lock (key)
+            {
+                AspectF.Define.Do<NCrawlerEntitiesDbServices>(
+                    e =>
+                        {
+                            e.AddToCrawlQueue(
+                                new CrawlQueue { GroupId = m_GroupId, SerializedData = crawlerQueueEntry.ToBinary(), });
+                            e.SaveChanges();
+                        });
+            }
 		}
 
 		private void Clean()

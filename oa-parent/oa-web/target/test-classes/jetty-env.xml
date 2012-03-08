@@ -77,7 +77,7 @@
 		<New class="org.mortbay.jetty.servlet.SessionHandler">
 			<Arg>
 				<New class="org.mortbay.jetty.servlet.HashSessionManager">
-					<Set name="storeDirectory">E\:\\Learn\\oa-parent\\oa-parent\\oa-web\\target/jetty-session</Set>
+					<Set name="storeDirectory">E\:\\Learn\\Repository\\oa-parent\\oa-web\\target/jetty-session</Set>
 				</New>
 			</Arg>
 		</New>

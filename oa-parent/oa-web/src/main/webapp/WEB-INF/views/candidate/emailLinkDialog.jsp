@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 
 <div id="candidate_exam_link_email_dialog" style="display:none; overflow: hidden;">
 	<form method="POST" action="<c:url value="sendEmail"/>">

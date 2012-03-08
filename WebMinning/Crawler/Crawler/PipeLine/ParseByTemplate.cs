@@ -15,7 +15,8 @@ using NCrawler;
     using System.Xml;
     using LRCrawler.Template;
     using LRCrawler.Persistence;
-
+    using System.Text.RegularExpressions;
+using NCrawler.HtmlProcessor;
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
@@ -32,13 +33,19 @@ using NCrawler;
             }
         }
 
+        private ITemplate mytemplate;
         protected virtual Template.ITemplate SelectTemplate(PropertyBag propertyBag)
         {
-            if (propertyBag.OriginalUrl.StartsWith("http://news.sina.com.cn/c/"))
+
+            if (Regex.IsMatch(propertyBag.ResponseUri.AbsoluteUri, "http://archive.cnblogs.com/a/.*"))
             {
-                XmlDocument doc = new XmlDocument();
-                doc.Load("Sina-NewsContent.xslt");
-                return new XSLTTemplate(doc);
+                if (mytemplate == null)
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load("cnblogs-post-lightweight.xslt");
+                    mytemplate = new XSLTTemplate(doc);
+                }
+                return mytemplate;
             }else
             {
                 return null;

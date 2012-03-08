@@ -35,7 +35,7 @@ namespace NCrawler.Demo
 			//  * Step 2 - Processes PDF files, extracting text
 			//  * Step 3 - Try to determine language based on page, based on text extraction, using google language detection
 			//  * Step 4 - Dump the information to the console, this is a custom step, see the DumperStep class
-			using (Crawler c = new Crawler(new Uri("http://ncrawler.codeplex.com"),
+			using (Crawler c = new Crawler(new Uri("http://www.cnblogs.com"),
 				new HtmlDocumentProcessor(), // Process html
 				new iTextSharpPdfProcessor.iTextSharpPdfProcessor(), // Add PDF text extraction
 				new GoogleLanguageDetection(), // Add language detection
@@ -43,8 +43,8 @@ namespace NCrawler.Demo
 				new DumperStep())
 				{
 					// Custom step to visualize crawl
-					MaximumThreadCount = 2,
-					MaximumCrawlDepth = 10,
+					MaximumThreadCount = 100,
+					MaximumCrawlDepth = 50,
 					ExcludeFilter = Program.ExtensionsToSkip,
 				})
 			{

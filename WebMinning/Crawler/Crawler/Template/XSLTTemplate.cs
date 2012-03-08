@@ -27,19 +27,26 @@ using System.Xml.Xsl;
 
         public  System.Xml.XmlDocument Parse(System.Xml.XPath.IXPathNavigable input)
         {
-            MemoryStream ms = new MemoryStream();
-            XmlTextWriter writer = new XmlTextWriter(ms, Encoding.UTF8);
-            transformer.Transform(input,null, writer);
-            writer.Flush();
-            XmlDocument doc = new XmlDocument();
-            string xml = Encoding.UTF8.GetString(ms.GetBuffer()).Trim();
-            if(xml.StartsWith(char.ConvertFromUtf32(65279)))
+            try
             {
-                xml = xml.Substring(1);
+                MemoryStream ms = new MemoryStream();
+                XmlTextWriter writer = new XmlTextWriter(ms, Encoding.UTF8);
+                transformer.Transform(input, null, writer);
+                writer.Flush();
+                XmlDocument doc = new XmlDocument();
+                string xml = Encoding.UTF8.GetString(ms.GetBuffer()).Trim();
+                if (xml.StartsWith(char.ConvertFromUtf32(65279)))
+                {
+                    xml = xml.Substring(1);
+                }
+                doc.LoadXml(xml);
+                writer.Close();
+                return doc;
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                throw ex;
             }
-            doc.LoadXml(xml);
-            writer.Close();
-            return doc;
 
         }
 

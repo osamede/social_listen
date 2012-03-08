@@ -30,15 +30,19 @@ namespace NCrawler.DbServices
 		#endregion
 
 		#region Instance Methods
+        private static object key = new object();
 
 		protected override void Add(string key)
 		{
-			AspectF.Define.
-				Do<NCrawlerEntitiesDbServices>(e =>
-					{
-						e.AddToCrawlHistory(CrawlHistory.CreateCrawlHistory(0, key, m_GroupId));
-						e.SaveChanges();
-					});
+            lock (key)
+            {
+                AspectF.Define.Do<NCrawlerEntitiesDbServices>(
+                    e =>
+                        {
+                            e.AddToCrawlHistory(CrawlHistory.CreateCrawlHistory(0, key, m_GroupId));
+                            e.SaveChanges();
+                        });
+            }
 		}
 
 		protected override void Cleanup()

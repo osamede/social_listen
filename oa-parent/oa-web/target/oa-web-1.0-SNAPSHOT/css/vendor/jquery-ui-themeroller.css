@@ -421,9 +421,18 @@ Generic ThemeRoller Classes
 	/*resets*/margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none;
 }
 /*clearfix class*/
-.ui-clearfix:after {    content: ".";     display: block;     height: 0;     clear: both;     visibility: hidden;}
+.ui-clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
 .ui-clearfix {display: inline-block;}
-/* Hides from IE-mac \*/* html .ui-clearfix {height: 1%;}.ui-clearfix {display: block;}/* End hide from IE-mac */
+/* Hides from IE-mac \*/
+* html .ui-clearfix {height: 1%;}
+.ui-clearfix {display: block;}
+/* End hide from IE-mac */
 
 /* Note: for resizable styles, use the styles listed above in the dialog section */
 

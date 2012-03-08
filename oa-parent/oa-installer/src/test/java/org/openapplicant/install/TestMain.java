@@ -69,7 +69,7 @@ public class TestMain {
 	
 	@Test
 	public void testDBCreate() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
-		Main.createDB("jdbc:mysql://localhost:3306", "root", "", "mrwtest", true, "mrw", "mrw");
+		//Main.createDB("jdbc:mysql://localhost:3306", "root", "", "mrwtest", true, "mrw", "mrw");
 	}
 	
 	@Ignore
@@ -77,11 +77,11 @@ public class TestMain {
 	public void testLoadSchema() throws URISyntaxException, IOException {
 		Map<String,String> dbOpts = new HashMap<String, String>();
 		dbOpts.put("datasource.server", "localhost");
-		dbOpts.put("datasource.user", "mrw");
-		dbOpts.put("datasource.password", "mrw");
+		dbOpts.put("datasource.user", "root");
+		dbOpts.put("datasource.password", "osamede");
 		dbOpts.put("datasource.dbname", "mrwtest");
 		dbOpts.put("datasource.port", "3306");
 		File file = new File(TestMain.class.getResource("/schematest.sql").toURI());
-		Main.loadSchema("/usr/local/bin/mysql", dbOpts, file);
+		Main.loadSchema("C:\Program Files\MySQL\MySQL Server 5.5\bin\MySql.exe", dbOpts, file);
 	}
 }

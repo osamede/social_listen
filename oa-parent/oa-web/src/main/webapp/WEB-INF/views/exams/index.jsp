@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib uri="/WEB-INF/tlds/ttTagLibrary.tld" prefix="tt" %>
 <%@ page import="static org.openapplicant.domain.User.Role.ROLE_ADMIN" %>

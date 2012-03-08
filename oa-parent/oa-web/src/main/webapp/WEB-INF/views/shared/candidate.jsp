@@ -1,4 +1,4 @@
-<%@ taglib prefix="c"    uri="http://java.sun.com/jstl/core_rt" %>
+﻿<%@ taglib prefix="c"    uri="http://java.sun.com/jstl/core_rt" %>
 <%@ taglib uri="/WEB-INF/tlds/ttTagLibrary.tld" prefix="tt" %>
 
 	<li class="candidate">

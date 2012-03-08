@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+﻿<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 
 <div id="toolbar">
 	<div class="toolbar_item" id="candidates_button">

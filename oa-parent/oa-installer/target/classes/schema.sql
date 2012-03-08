@@ -1,9 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.30, for apple-darwin9.5.2 (i386)
+﻿-- MySQL dump 10.13  Distrib 5.1.30, for apple-darwin9.5.2 (i386)
 --
 -- Host: localhost    Database: openapplicant
 -- ------------------------------------------------------
 -- Server version	5.1.30
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -20,8 +19,7 @@
 --
 
 DROP TABLE IF EXISTS `account_creation_token`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
 CREATE TABLE `account_creation_token` (
   `id` bigint(20) NOT NULL,
   `city` varchar(255) DEFAULT NULL,
@@ -38,8 +36,8 @@ CREATE TABLE `account_creation_token` (
   KEY `FK98EF4CEB2899FC56` (`id`),
   CONSTRAINT `FK98EF4CEB2899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FK98EF4CEBF8A52930` FOREIGN KEY (`company`) REFERENCES `company` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `account_creation_token`
@@ -55,15 +53,15 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `attachment_indexable`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `attachment_indexable` (
   `attachment_id` bigint(20) NOT NULL,
   `string_content` longtext,
   PRIMARY KEY (`attachment_id`),
   FULLTEXT KEY `idx_attachment_fulltext` (`string_content`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `attachment_indexable`
@@ -79,8 +77,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `candidate`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `candidate` (
   `id` bigint(20) NOT NULL,
   `address` text,
@@ -107,8 +105,8 @@ CREATE TABLE `candidate` (
   CONSTRAINT `FK1E519583A3E4D525` FOREIGN KEY (`last_sitting`) REFERENCES `sitting` (`id`),
   CONSTRAINT `FK1E519583CC9CA5A1` FOREIGN KEY (`cover_letter`) REFERENCES `file_attachment` (`id`),
   CONSTRAINT `FK1E519583F8A52930` FOREIGN KEY (`company`) REFERENCES `company` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `candidate`
@@ -124,8 +122,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `candidate_note`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `candidate_note` (
   `candidate` bigint(20) NOT NULL,
   `note_id` bigint(20) NOT NULL,
@@ -134,8 +132,8 @@ CREATE TABLE `candidate_note` (
   KEY `FK535CCD2E97114004` (`note_id`),
   CONSTRAINT `FK535CCD2E97114004` FOREIGN KEY (`note_id`) REFERENCES `note` (`id`),
   CONSTRAINT `FK535CCD2E490EA5BC` FOREIGN KEY (`candidate`) REFERENCES `candidate` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `candidate_note`
@@ -151,8 +149,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `candidate_phone_numbers`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `candidate_phone_numbers` (
   `candidate` bigint(20) NOT NULL,
   `number` varchar(255) NOT NULL,
@@ -160,8 +158,8 @@ CREATE TABLE `candidate_phone_numbers` (
   PRIMARY KEY (`candidate`,`mapkey`),
   KEY `FK52862ABD490EA5BC` (`candidate`),
   CONSTRAINT `FK52862ABD490EA5BC` FOREIGN KEY (`candidate`) REFERENCES `candidate` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `candidate_phone_numbers`
@@ -177,8 +175,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `candidate_search`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `candidate_search` (
   `type` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
@@ -192,8 +190,8 @@ CREATE TABLE `candidate_search` (
   KEY `FKF75123E42899FC56` (`id`),
   CONSTRAINT `FKF75123E42899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FKF75123E418620320` FOREIGN KEY (`user`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `candidate_search`
@@ -209,8 +207,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `candidate_work_flow_event`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `candidate_work_flow_event` (
   `type` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
@@ -242,8 +240,8 @@ CREATE TABLE `candidate_work_flow_event` (
   CONSTRAINT `FKC4E26B7B81BB91CE` FOREIGN KEY (`sitting`) REFERENCES `sitting` (`id`),
   CONSTRAINT `FKC4E26B7BCC9CA5A1` FOREIGN KEY (`cover_letter`) REFERENCES `file_attachment` (`id`),
   CONSTRAINT `FKC4E26B7BD9421F4C` FOREIGN KEY (`exam_link`) REFERENCES `exam_link` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `candidate_work_flow_event`
@@ -259,8 +257,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `company`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `company` (
   `id` bigint(20) NOT NULL,
   `completion_text` longtext NOT NULL,
@@ -302,8 +300,8 @@ CREATE TABLE `company` (
   CONSTRAINT `FK38A73C7DADEBA205` FOREIGN KEY (`exam_invite_email_template`) REFERENCES `email_template` (`id`),
   CONSTRAINT `FK38A73C7DBE910A75` FOREIGN KEY (`request_resume_email_template`) REFERENCES `email_template` (`id`),
   CONSTRAINT `FK38A73C7DEF6CA9A7` FOREIGN KEY (`reject_candidate_email_template`) REFERENCES `email_template` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `company`
@@ -311,7 +309,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `company` WRITE;
 /*!40000 ALTER TABLE `company` DISABLE KEYS */;
-INSERT INTO `company` VALUES (1,'Thank you for taking the exam.\nIt usually takes a us few days to process the results, then we will get back to you.','resumes','@oa.server@',@oa.port@,NULL,'@oa.companyName@','@oa.server@',@oa.port@,'The following exam will present you with a series of questions designed to measure your problem solving abilities. Not all of the questions are timed, but that does not mean you can google around for the answers. Be sure to watch the timer in the upper-right corner.\n\nGet a pencil, scratch paper, glass of water, and click \'start\' when you are ready to begin. The whole exam should take somewhere between 20 and 60 minutes. Good luck!',2,3,4,6,7,8);
+INSERT INTO `company` VALUES (1,'Thank you for taking the exam.\nIt usually takes a us few days to process the results, then we will get back to you.','resumes','localhost',8080,NULL,'Test','localhost',8080,'The following exam will present you with a series of questions designed to measure your problem solving abilities. Not all of the questions are timed, but that does not mean you can google around for the answers. Be sure to watch the timer in the upper-right corner.\n\nGet a pencil, scratch paper, glass of water, and click \'start\' when you are ready to begin. The whole exam should take somewhere between 20 and 60 minutes. Good luck!',2,3,4,6,7,8);
 /*!40000 ALTER TABLE `company` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -320,8 +318,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `email_template`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `email_template` (
   `type` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
@@ -331,8 +329,8 @@ CREATE TABLE `email_template` (
   PRIMARY KEY (`id`),
   KEY `FK6C0301BD2899FC56` (`id`),
   CONSTRAINT `FK6C0301BD2899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `email_template`
@@ -349,15 +347,15 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `entity_info`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `entity_info` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `guid` varchar(36) NOT NULL,
   `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `entity_info`
@@ -374,8 +372,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `exam`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `exam` (
   `id` bigint(20) NOT NULL,
   `active` bit(1) NOT NULL DEFAULT '',
@@ -397,8 +395,8 @@ CREATE TABLE `exam` (
   CONSTRAINT `FK2FB81F71697B39` FOREIGN KEY (`previous_version`) REFERENCES `exam` (`id`),
   CONSTRAINT `FK2FB81F77A78F35` FOREIGN KEY (`next_version`) REFERENCES `exam` (`id`),
   CONSTRAINT `FK2FB81FF8A52930` FOREIGN KEY (`company`) REFERENCES `company` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `exam`
@@ -415,8 +413,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `exam_link`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `exam_link` (
   `kind` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
@@ -436,8 +434,8 @@ CREATE TABLE `exam_link` (
   CONSTRAINT `FKFB36EC1A490EA5BC` FOREIGN KEY (`candidate`) REFERENCES `candidate` (`id`),
   CONSTRAINT `FKFB36EC1AD0FDF5BB` FOREIGN KEY (`exams_strategy`) REFERENCES `exams_strategy` (`id`),
   CONSTRAINT `FKFB36EC1AF8A52930` FOREIGN KEY (`company`) REFERENCES `company` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `exam_link`
@@ -454,8 +452,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `exam_questions`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `exam_questions` (
   `exam` bigint(20) NOT NULL,
   `questions` bigint(20) NOT NULL,
@@ -465,8 +463,8 @@ CREATE TABLE `exam_questions` (
   KEY `FK76A1992D18539BC8` (`exam`),
   CONSTRAINT `FK76A1992D18539BC8` FOREIGN KEY (`exam`) REFERENCES `exam` (`id`),
   CONSTRAINT `FK76A1992DE36DBF31` FOREIGN KEY (`questions`) REFERENCES `question` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `exam_questions`
@@ -483,16 +481,16 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `exams_strategy`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `exams_strategy` (
   `kind` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `FK668E031E2899FC56` (`id`),
   CONSTRAINT `FK668E031E2899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `exams_strategy`
@@ -509,8 +507,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `exams_strategy_exams`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `exams_strategy_exams` (
   `exams_strategy` bigint(20) NOT NULL,
   `exam_id` bigint(20) NOT NULL,
@@ -518,8 +516,8 @@ CREATE TABLE `exams_strategy_exams` (
   KEY `FK519E63D3C948B4E4` (`exam_id`),
   CONSTRAINT `FK519E63D3C948B4E4` FOREIGN KEY (`exam_id`) REFERENCES `exam` (`id`),
   CONSTRAINT `FK519E63D37E1AC16D` FOREIGN KEY (`exams_strategy`) REFERENCES `exams_strategy` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `exams_strategy_exams`
@@ -535,8 +533,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `file_attachment`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `file_attachment` (
   `type` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
@@ -547,8 +545,8 @@ CREATE TABLE `file_attachment` (
   PRIMARY KEY (`id`),
   KEY `FKE596B3C62899FC56` (`id`),
   CONSTRAINT `FKE596B3C62899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `file_attachment`
@@ -558,12 +556,12 @@ LOCK TABLES `file_attachment` WRITE;
 /*!40000 ALTER TABLE `file_attachment` DISABLE KEYS */;
 /*!40000 ALTER TABLE `file_attachment` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_client      = @@CHARACTER_SET_CLIENT */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = latin1 */ ;
-/*!50003 SET character_set_results = latin1 */ ;
-/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_unicode_ci */ ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
@@ -577,12 +575,12 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_client      = @@CHARACTER_SET_CLIENT */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = latin1 */ ;
-/*!50003 SET character_set_results = latin1 */ ;
-/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_unicode_ci */ ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
@@ -602,16 +600,16 @@ DELIMITER ;
 --
 
 DROP TABLE IF EXISTS `grade`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `grade` (
   `id` bigint(20) NOT NULL,
   `score` decimal(19,2) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK5E0BFD72899FC56` (`id`),
   CONSTRAINT `FK5E0BFD72899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `grade`
@@ -627,8 +625,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `grade_scores`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `grade_scores` (
   `grade` bigint(20) NOT NULL,
   `score` decimal(19,2) NOT NULL,
@@ -636,8 +634,8 @@ CREATE TABLE `grade_scores` (
   PRIMARY KEY (`grade`,`mapkey`),
   KEY `FK480BA189F252C564` (`grade`),
   CONSTRAINT `FK480BA189F252C564` FOREIGN KEY (`grade`) REFERENCES `grade` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `grade_scores`
@@ -653,13 +651,13 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `login_events`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `login_events` (
   `user` bigint(20) DEFAULT NULL,
   `login_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `login_events`
@@ -675,8 +673,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `note`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `note` (
   `id` bigint(20) NOT NULL,
   `body` longtext NOT NULL,
@@ -686,8 +684,8 @@ CREATE TABLE `note` (
   KEY `FK33AFF22899FC56` (`id`),
   CONSTRAINT `FK33AFF22899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FK33AFF2C45838E0` FOREIGN KEY (`author`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `note`
@@ -703,8 +701,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `password_recovery_token`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `password_recovery_token` (
   `id` bigint(20) NOT NULL,
   `user` bigint(20) NOT NULL,
@@ -713,8 +711,8 @@ CREATE TABLE `password_recovery_token` (
   KEY `FK973FA2F32899FC56` (`id`),
   CONSTRAINT `FK973FA2F32899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FK973FA2F318620320` FOREIGN KEY (`user`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `password_recovery_token`
@@ -730,8 +728,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `profile`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `profile` (
   `id` bigint(20) NOT NULL,
   `accept_resumes_by_email` bit(1) NOT NULL DEFAULT '\0',
@@ -747,8 +745,8 @@ CREATE TABLE `profile` (
   PRIMARY KEY (`id`),
   KEY `FKED8E89A92899FC56` (`id`),
   CONSTRAINT `FKED8E89A92899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `profile`
@@ -765,15 +763,15 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `profile_job_boards`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `profile_job_boards` (
   `profile` bigint(20) NOT NULL,
   `element` varchar(255) DEFAULT NULL,
   KEY `FK979369656273C388` (`profile`),
   CONSTRAINT `FK979369656273C388` FOREIGN KEY (`profile`) REFERENCES `profile` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `profile_job_boards`
@@ -790,8 +788,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `profile_keywords`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `profile_keywords` (
   `profile` bigint(20) NOT NULL,
   `element` int(11) DEFAULT NULL,
@@ -799,8 +797,8 @@ CREATE TABLE `profile_keywords` (
   PRIMARY KEY (`profile`,`mapkey`),
   KEY `FK28CB15806273C388` (`profile`),
   CONSTRAINT `FK28CB15806273C388` FOREIGN KEY (`profile`) REFERENCES `profile` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `profile_keywords`
@@ -817,8 +815,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `question`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `question` (
   `kind` varchar(31) NOT NULL,
   `id` bigint(20) NOT NULL,
@@ -838,8 +836,8 @@ CREATE TABLE `question` (
   CONSTRAINT `FKBA823BE62899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FKBA823BE6A6EE1574` FOREIGN KEY (`previous_version`) REFERENCES `question` (`id`),
   CONSTRAINT `FKBA823BE6AD2C2970` FOREIGN KEY (`next_version`) REFERENCES `question` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `question`
@@ -856,8 +854,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `question_and_response`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `question_and_response` (
   `id` bigint(20) NOT NULL,
   `question` bigint(20) NOT NULL,
@@ -873,8 +871,8 @@ CREATE TABLE `question_and_response` (
   CONSTRAINT `FKB87921623AED7F0C` FOREIGN KEY (`response`) REFERENCES `response` (`id`),
   CONSTRAINT `FKB879216281BB91CE` FOREIGN KEY (`sitting`) REFERENCES `sitting` (`id`),
   CONSTRAINT `FKB879216282AB9CA` FOREIGN KEY (`question`) REFERENCES `question` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `question_and_response`
@@ -890,15 +888,15 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `question_choices`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `question_choices` (
   `question` bigint(20) NOT NULL,
   `element` varchar(255) DEFAULT NULL,
   KEY `FKCCF0F3994A488C3B` (`question`),
   CONSTRAINT `FKCCF0F3994A488C3B` FOREIGN KEY (`question`) REFERENCES `question` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `question_choices`
@@ -915,8 +913,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `response`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `response` (
   `id` bigint(20) NOT NULL,
   `away_time` bigint(20) NOT NULL,
@@ -951,8 +949,8 @@ CREATE TABLE `response` (
   KEY `FKEBB714412899FC56` (`id`),
   CONSTRAINT `FKEBB714412899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FKEBB71441F252C564` FOREIGN KEY (`grade`) REFERENCES `grade` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `response`
@@ -968,8 +966,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `sitting`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `sitting` (
   `id` bigint(20) NOT NULL,
   `next_question_index` int(11) NOT NULL,
@@ -1004,8 +1002,8 @@ CREATE TABLE `sitting` (
   CONSTRAINT `FK7D3270CC2899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FK7D3270CC18539BC8` FOREIGN KEY (`exam`) REFERENCES `exam` (`id`),
   CONSTRAINT `FK7D3270CC490EA5BC` FOREIGN KEY (`candidate`) REFERENCES `candidate` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `sitting`
@@ -1021,8 +1019,8 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `user`;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 CREATE TABLE `user` (
   `id` bigint(20) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -1040,8 +1038,8 @@ CREATE TABLE `user` (
   KEY `FK36EBCB2899FC56` (`id`),
   CONSTRAINT `FK36EBCB2899FC56` FOREIGN KEY (`id`) REFERENCES `entity_info` (`id`),
   CONSTRAINT `FK36EBCBF8A52930` FOREIGN KEY (`company`) REFERENCES `company` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-SET character_set_client = @saved_cs_client;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `user`
@@ -1049,15 +1047,15 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (9,'@oa.adminUser@','','@oa.password@',NULL,'Open','Applicant','','ROLE_ADMIN',1);
+INSERT INTO `user` VALUES (9,'osamede@163.com','','13Li/S5nouCWnh/DDkgnsw2huE3+sBIRg+FboA==',NULL,'Open','Applicant','','ROLE_ADMIN',1);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_client      = @@CHARACTER_SET_CLIENT */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = latin1 */ ;
-/*!50003 SET character_set_results = latin1 */ ;
-/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_unicode_ci */ ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
@@ -1081,8 +1079,8 @@ DELIMITER ;
 
 DROP TABLE IF EXISTS `v_question_candidate_stats`;
 /*!50001 DROP VIEW IF EXISTS `v_question_candidate_stats`*/;
-SET @saved_cs_client     = @@character_set_client;
-SET character_set_client = utf8;
+
+
 /*!50001 CREATE TABLE `v_question_candidate_stats` (
   `question` bigint(20),
   `response` bigint(20),
@@ -1110,34 +1108,13 @@ SET character_set_client = utf8;
   `style` decimal(19,2),
   `correctness` decimal(19,2)
 ) ENGINE=MyISAM */;
-SET character_set_client = @saved_cs_client;
 
---
--- Final view structure for view `v_question_candidate_stats`
---
+alter table company add facilitator_pass varchar(255);
+alter table company add protocol integer;
+alter table company add facilitator_url varchar(255);
+alter table company add facilitator_user varchar(255);
+alter table company add smtp_pass varchar(255);
+alter table company add smtp_port integer;
+alter table company add smtp_url varchar(255);
+alter table company add smtp_user varchar(255);
 
-/*!50001 DROP TABLE `v_question_candidate_stats`*/;
-/*!50001 DROP VIEW IF EXISTS `v_question_candidate_stats`*/;
-/*!50001 SET @saved_cs_client          = @@character_set_client */;
-/*!50001 SET @saved_cs_results         = @@character_set_results */;
-/*!50001 SET @saved_col_connection     = @@collation_connection */;
-/*!50001 SET character_set_client      = latin1 */;
-/*!50001 SET character_set_results     = latin1 */;
-/*!50001 SET collation_connection      = latin1_swedish_ci */;
-/*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `v_question_candidate_stats` AS select `qar`.`question` AS `question`,`qar`.`response` AS `response`,`s1`.`id` AS `sitting_id`,`c1`.`id` AS `candidate_id`,(case `c1`.`status` when 'HIRED' then 'HIRED' when 'REJECTED' then 'REJECTED' when 'CANDIDATE_REJECTED' then 'REJECTED' when 'RESUME_REJECTED' then 'REJECTED' when 'FUTURE_CANDIDATE' then 'FUTURE' when 'BENCHMARKED' then 'BENCHMARKED' when 'INCOMPLETE' then 'INCOMPLETE' else 'ACTIVE' end) AS `status`,`r1`.`away_time` AS `away_time`,`r1`.`cut_copy` AS `cut_copy`,`r1`.`erase_chars` AS `erase_chars`,`r1`.`erase_presses` AS `erase_presses`,`r1`.`focus_changes` AS `focus_changes`,`r1`.`focus_time` AS `focus_time`,`r1`.`hesitation_time` AS `hesitation_time`,`r1`.`key_chars` AS `key_chars`,`r1`.`key_presses` AS `key_presses`,`r1`.`line_count` AS `line_count`,`r1`.`load_timestamp` AS `load_timestamp`,`r1`.`paste_chars` AS `paste_chars`,`r1`.`paste_presses` AS `paste_presses`,`r1`.`reviewing_time` AS `reviewing_time`,`r1`.`total_time` AS `total_time`,`r1`.`typing_time` AS `typing_time`,`r1`.`word_count` AS `word_count`,`g1`.`score` AS `score`,`gs1`.`score` AS `style`,`gs2`.`score` AS `correctness` from ((((((`question_and_response` `qar` join `sitting` `s1` on((`qar`.`sitting` = `s1`.`id`))) join `candidate` `c1` on((`s1`.`candidate` = `c1`.`id`))) left join `response` `r1` on((`qar`.`response` = `r1`.`id`))) left join `grade` `g1` on((`r1`.`grade` = `g1`.`id`))) left join `grade_scores` `gs1` on(((`r1`.`grade` = `gs1`.`grade`) and (`gs1`.`mapkey` = 'form')))) left join `grade_scores` `gs2` on(((`r1`.`grade` = `gs2`.`grade`) and (`gs2`.`mapkey` = 'function')))) */;
-/*!50001 SET character_set_client      = @saved_cs_client */;
-/*!50001 SET character_set_results     = @saved_cs_results */;
-/*!50001 SET collation_connection      = @saved_col_connection */;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2009-04-19 22:42:57
