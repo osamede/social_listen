@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.openapplicant.dao.hibernate.FileAttachmentDAOTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.495 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec

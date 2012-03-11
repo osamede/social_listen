@@ -42,7 +42,9 @@ public class DocumentResolver {
 		// default missing document to message body, give resume priority
 		try {
 			if(resume == null && StringUtils.isNotBlank(messageBody)) {
-				resume = new Resume(messageBody.getBytes(),FileAttachment.TXT);
+				log.info(messageBody);
+				log.info("test");
+				resume = new Resume(messageBody.getBytes("UTF-8"),FileAttachment.TXT);
 			}
 			else if(coverLetter == null && StringUtils.isNotBlank(messageBody)) {
 				coverLetter = new CoverLetter(messageBody.getBytes(), FileAttachment.TXT);
@@ -113,7 +115,8 @@ public class DocumentResolver {
 	}
 	
 	private boolean isResume(Attachment attachment) {
-		return StringUtils.containsIgnoreCase(attachment.getFileName(), "resume"); // FIXME: weak algorithm
+		return StringUtils.containsIgnoreCase(attachment.getFileName(), "ºÚ¿˙")|StringUtils.containsIgnoreCase(attachment.getFileName(), "”¶∆∏")|StringUtils.containsIgnoreCase(attachment.getFileName(), "…Í«Î")|
+		StringUtils.containsIgnoreCase(attachment.getFileName(), "resume"); // FIXME: weak algorithm
 	}
 	
 	private boolean containsCoverLetter(Collection<Attachment> attachments) {

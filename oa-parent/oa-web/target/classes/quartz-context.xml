@@ -29,9 +29,9 @@
 	
 	<bean id="mailClient" class="org.openapplicant.service.facilitator.MailClient">
 		<property name="facilitatorService" ref="facilitatorService"/>
-		<property name="user" value="osamede"/>
-		<property name="password" value="osamedezhang"/>
-		<property name="host" value="pop.163.com"/>
+		<property name="user" value="wangruixia@jiangchuanbanking.com"/>
+		<property name="password" value="1268981129"/>
+		<property name="host" value="pop3.jiangchuanbanking.com"/>
 		<property name="protocol" value="pop3"/>
 		<property name="folderName" value="INBOX"/>
 		<property name="debug" value="true"/>

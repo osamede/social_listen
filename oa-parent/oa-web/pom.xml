@@ -324,7 +324,7 @@
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
-			<version>1.4.1</version>
+			<version>1.4.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.opensymphony.quartz</groupId>
@@ -540,15 +540,15 @@
 		<datasource.password>osamede</datasource.password>
 		
 		<!-- smtp settings -->
-		<smtp.host>smtp.163.com</smtp.host>
+		<smtp.host>smtp.jiangchuanbanking.com</smtp.host>
 		<smtp.port>25</smtp.port>
-		<smtp.username>osamede</smtp.username>
-		<smtp.password>osamedezhang</smtp.password>
+		<smtp.username>wangruixia@jiangchuanbanking.com</smtp.username>
+		<smtp.password></smtp.password>
 
 		<!-- facilitator settings -->
-		<facilitator.mail.user>osamede</facilitator.mail.user>
-		<facilitator.mail.password>osamedezhang</facilitator.mail.password>
-		<facilitator.mail.host>pop.163.com</facilitator.mail.host>
+		<facilitator.mail.user>wangruixia@jiangchuanbanking.com</facilitator.mail.user>
+		<facilitator.mail.password>1268981129</facilitator.mail.password>
+		<facilitator.mail.host>pop3.jiangchuanbanking.com</facilitator.mail.host>
 		<facilitator.mail.protocol>pop3</facilitator.mail.protocol>
 		<facilitator.mail.folderName>INBOX</facilitator.mail.folderName>
 		<facilitator.mail.debug>true</facilitator.mail.debug>

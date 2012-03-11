@@ -4,28 +4,32 @@ import java.io.IOException;
 
 import javax.mail.MessagingException;
 import javax.mail.Part;
-
+import javax.mail.internet.MimeUtility;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
-
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 /**
  * Helper class for normalizing a message attachment.
  */
 class Attachment {
+	private static final Log log = LogFactory.getLog(DocumentResolver.class);
 	
 	private String fileName;
 	
 	private byte[] content;
 	
 	public Attachment(Part part) throws IOException, MessagingException {
-		this(IOUtils.toByteArray(part.getInputStream()), part.getFileName());
+		this(IOUtils.toString(part.getInputStream(),"GB2312").getBytes("UTF-8"), part.getFileName());
 	}
 	
 	public Attachment(byte[] content, String fileName) {
 		this.fileName = StringUtils.trimToEmpty(fileName);
+		this.content=content;
 		if(ArrayUtils.isEmpty(content)) {
 			this.content = ArrayUtils.EMPTY_BYTE_ARRAY;
+			log.info("ArrayUtils.EMPTY_BYTE_ARRAY");
 		}
 	}
 	

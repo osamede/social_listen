@@ -184,12 +184,16 @@ public class FacilitatorService extends ApplicationService {
 		
 		// phone numbers
 		Map<String,String> numbers = new HashMap<String,String>(3);
-		Pattern phonePattern = Pattern.compile("(\\d{3})[-\\ .](\\d{3})[-\\. ](\\d{4}) ?(\\([^\\)]+\\))?");
+		Pattern phonePattern = Pattern.compile("((\\d{11})|^((\\d{7,8})|(\\d{4}|\\d{3})-(\\d{7,8})|(\\d{4}|\\d{3})-(\\d{7,8})-(\\d{4}|\\d{3}|\\d{2}|\\d{1})|(\\d{7,8})-(\\d{4}|\\d{3}|\\d{2}|\\d{1}))$)");
 		boolean backwards = false;
 		String kind = "";
 		for (int i = 1; i < lineCount; i++) {
 			Matcher matcher = phonePattern.matcher(lines[i]);
-			while (matcher.find()) {
+			if(matcher.matches()){
+				numbers.put("work", matcher.group());
+				break;
+			}
+		/*	while (matcher.find()) {
 				log.debug("-- phone number matched on line "+i+" '"+lines[i]+"'");
 				String number = matcher.group(1) + "-" + matcher.group(2) + "-" +matcher.group(3);
 				log.debug("Number is: "+number);
@@ -217,6 +221,7 @@ public class FacilitatorService extends ApplicationService {
 				}
 				numbers.put(kind, number);
 			}
+			*/
 			
 		}
 		

@@ -12,6 +12,7 @@
 
 	<!--
 		Configures the application context for integration tests
+		<import resource="classpath:quartz-context.xml"/>
 	-->
 	
 	<context:annotation-config />
@@ -27,5 +28,6 @@
 		p:password="${jdbc.password}" />
 		
 	<import resource="classpath:/spring-context.xml"/>
+	
 	
 </beans>

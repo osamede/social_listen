@@ -3,8 +3,10 @@ package org.openapplicant.domain;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Reader;
 import java.sql.Blob;
 import java.sql.Clob;
+import javax.sql.rowset.serial.SerialClob;
 import java.sql.SQLException;
 import java.util.zip.DataFormatException;
 
@@ -35,6 +37,8 @@ public abstract class FileAttachment extends DomainObject {
 	public static final String PDF = "pdf";
 	
 	public static final String TXT = "txt";
+	
+	public static final String HTML="html";
 	
 	private String fileType;
 	
@@ -85,7 +89,10 @@ public abstract class FileAttachment extends DomainObject {
 	public String getContentType() {
 		if(TXT.equals(fileType)) {
 			return "text/plain";
-		} else if(DOC.equals(fileType)) {
+		}else if(HTML.equals(fileType)){
+			return "text/html";
+		}		
+		else if(DOC.equals(fileType)) {
 			return "application/msword";
 		} else if(PDF.equals(fileType)) {
 			return "application/pdf";
@@ -127,15 +134,17 @@ public abstract class FileAttachment extends DomainObject {
 	 */
 	@Transient
 	public String getStringContent() {
-		InputStream input = null;
+		Reader input = null;
 		try {
-			input = stringContent.getAsciiStream();
+			input = stringContent.getCharacterStream();
 			return IOUtils.toString(input);
+			//return stringContent.getSubString(0,(int)stringContent.length());
 		} catch (SQLException e) {
 			throw new DataRetrievalFailureException("error reading content",e);
 		} catch (IOException e) {
 			throw new DataRetrievalFailureException("error reading content", e);
-		} finally {
+		} 
+		finally {
 			IOUtils.closeQuietly(input);
 		}
 	}
@@ -152,8 +161,13 @@ public abstract class FileAttachment extends DomainObject {
 	
 	private Clob parseContent(byte[] content, String fileType) 
 		throws IOException, FileTypeNotSupportedException {
-		if (StringUtils.equalsIgnoreCase(fileType, TXT)) {
-			return Hibernate.createClob(new String(content));
+		if (StringUtils.equalsIgnoreCase(fileType, TXT)||StringUtils.equalsIgnoreCase(fileType, HTML)) {
+			//return Hibernate.createClob(new String(content,"UTF-8"));
+			try{
+				return new SerialClob((new String(content,"UTF-8")).toCharArray());
+			}catch (SQLException e) {
+				throw new IOException("error create serial clob");
+			}
 		}
 		else if(StringUtils.equalsIgnoreCase(fileType, DOC)) {
 			int pad = 512 - (content.length % 512);

@@ -74,16 +74,20 @@ public class MailClient {
 		Store store = null;
 		Folder folder = null;
 		try {
-			store = session.getStore(protocol);
+			store = session.getStore(protocol);	
 			store.connect(host, user, password);
 			folder = store.getFolder(folderName);
 			folder.open(Folder.READ_WRITE);
 			for(Message each : folder.getMessages()) {
-				if(each.getFlags().contains(Flags.Flag.DELETED)){
+				if(each.getFlags().contains(Flags.Flag.SEEN)){
 					continue;
 				}
-				facilitatorService.facilitateCandidate(each);
-				each.setFlag(Flags.Flag.DELETED, true);
+				try{
+					facilitatorService.facilitateCandidate(each);
+				}catch(IOException e){
+					log.error(e);
+				}
+				each.setFlag(Flags.Flag.SEEN, true);
 			}
 		}
 		catch(NoSuchProviderException e) {
@@ -92,9 +96,9 @@ public class MailClient {
 		catch(MessagingException e) {
 			throw new RuntimeException(e);
 		}
-		catch(IOException e) {
-			throw new RuntimeException(e);
-		}
+	//	catch(IOException e) {
+		//	throw new RuntimeException(e);
+	//	}
 		finally {
 			expungeQuietly(folder);
 			closeQuietly(store);
