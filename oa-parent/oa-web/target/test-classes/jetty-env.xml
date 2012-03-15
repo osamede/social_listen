@@ -47,7 +47,7 @@
 		<Arg>jdbc/sample-ds</Arg>
 		<Arg>
 			<New class="com.atomikos.jdbc.nonxa.NonXADataSourceBean">
-				<Set name="Url">jdbc:mysql://localhost:3306/openapplicant?createDatabaseIfNotExist=true</Set>
+				<Set name="Url">jdbc:mysql://localhost:3306/resumetrack?createDatabaseIfNotExist=true</Set>
 				<Set name="DriverClassName">com.mysql.jdbc.Driver</Set>
 				<Set name="User">root</Set>
 				<Set name="Password">osamede</Set>
@@ -65,7 +65,7 @@
 		<Arg>
 			<New class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 				<Set name="DriverClassName">com.mysql.jdbc.Driver</Set>
-				<Set name="Url">jdbc:mysql://localhost:3306/openapplicant?createDatabaseIfNotExist=true</Set>
+				<Set name="Url">jdbc:mysql://localhost:3306/resumetrack?createDatabaseIfNotExist=true</Set>
 				<Set name="Username">root</Set>
 				<Set name="Password">osamede</Set>
 			</New>
@@ -77,7 +77,7 @@
 		<New class="org.mortbay.jetty.servlet.SessionHandler">
 			<Arg>
 				<New class="org.mortbay.jetty.servlet.HashSessionManager">
-					<Set name="storeDirectory">f:\\Repo\\social_listen\\oa-parent\\oa-web\\target/jetty-session</Set>
+					<Set name="storeDirectory">e\:\\learn\\repository\\oa-parent\\oa-web\\target/jetty-session</Set>
 				</New>
 			</Arg>
 		</New>

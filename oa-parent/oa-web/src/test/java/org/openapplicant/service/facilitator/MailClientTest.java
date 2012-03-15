@@ -20,17 +20,12 @@ import org.springframework.test.context.junit4.AbstractTransactionalJUnit4Spring
 @ContextConfiguration(locations="/applicationContext-test.xml")
 public class MailClientTest extends AbstractTransactionalJUnit4SpringContextTests {
 	
-	//@Resource
-	//private MailClient mailClient;
+	@Resource
+	private MailClient mailClient;
 	@Test
 	public void processMail(){
-	//	MailClient client=new MailClient();
-	//	mailClient.setDebug(true);
-	//	mailClient.processMail();
-	Pattern phonePattern = Pattern.compile("((\\d{11})|^((\\d{7,8})|(\\d{4}|\\d{3})-(\\d{7,8})|(\\d{4}|\\d{3})-(\\d{7,8})-(\\d{4}|\\d{3}|\\d{2}|\\d{1})|(\\d{7,8})-(\\d{4}|\\d{3}|\\d{2}|\\d{1})))");
-			Matcher matcher = phonePattern.matcher("15727384532µç»°");
-			assertTrue(matcher.find());
-			logger.info(matcher.group());
+		mailClient.setDebug(true);
+		mailClient.processMail();
 		
 	}
 }

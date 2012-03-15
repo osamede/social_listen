@@ -135,6 +135,8 @@ public class FacilitatorService extends ApplicationService {
 	// FIXME: duplication with QuizService.resolveCandidate
 	private Candidate findOrCreateCandidate(Company company, String candidateEmail, String candidateName) {
 		if(StringUtils.isNotBlank(candidateEmail)) {
+			log.info(candidateEmail);
+			log.info(company.getId());
 			Candidate result = getCandidateDao().findByEmailAndCompanyIdOrNull(
 					candidateEmail, 
 					company.getId()

@@ -519,7 +519,7 @@
 		<jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
 		<jdbc.version>5.1.6</jdbc.version>
 		<jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
-		<jdbc.database>openapplicant</jdbc.database>
+		<jdbc.database>resumetrack</jdbc.database>
 		<jdbc.username>root</jdbc.username>
 		<jdbc.password>osamede</jdbc.password>
 		<jdbc.url><![CDATA[jdbc:mysql://localhost:3306/${jdbc.database}?createDatabaseIfNotExist=true]]></jdbc.url>
@@ -535,7 +535,7 @@
 		<!--  datasource settings -->
 		<datasource.server>localhost</datasource.server>
 	    <datasource.port>3306</datasource.port>
-		<datasource.dbname>openapplicant</datasource.dbname>
+		<datasource.dbname>resumetrack</datasource.dbname>
 		<datasource.username>root</datasource.username>
 		<datasource.password>osamede</datasource.password>
 		

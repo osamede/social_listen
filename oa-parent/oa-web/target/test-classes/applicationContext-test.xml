@@ -12,7 +12,7 @@
 
 	<!--
 		Configures the application context for integration tests
-		<import resource="classpath:quartz-context.xml"/>
+		
 	-->
 	
 	<context:annotation-config />
@@ -23,11 +23,11 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		p:driverClassName="com.mysql.jdbc.Driver" 
-		p:url="jdbc:mysql://localhost:3306/openapplicant?createDatabaseIfNotExist=true" 
+		p:url="jdbc:mysql://localhost:3306/resumetrack?createDatabaseIfNotExist=true" 
 		p:username="root"
 		p:password="osamede" />
 		
 	<import resource="classpath:/spring-context.xml"/>
-	
+	<import resource="classpath:quartz-context.xml"/>
 	
 </beans>

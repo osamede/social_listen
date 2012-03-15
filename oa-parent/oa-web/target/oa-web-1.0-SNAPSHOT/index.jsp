@@ -1,5 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf8"
-    pageEncoding="ISO-8859-1"%>
+﻿<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html>
 <head>
