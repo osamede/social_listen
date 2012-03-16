@@ -138,6 +138,6 @@ public class MessageReader {
 	}
 	
 	private boolean isBodyText(Part part) throws MessagingException {
-		return part.getDisposition() == null && part.isMimeType("text/plain");
+		return part.getDisposition() == null && (part.isMimeType("text/plain")||part.isMimeType("text/html"));
 	}
 }

@@ -191,7 +191,7 @@ public class FacilitatorService extends ApplicationService {
 		String kind = "";
 		for (int i = 1; i < lineCount; i++) {
 			Matcher matcher = phonePattern.matcher(lines[i]);
-			if(matcher.matches()){
+			if(matcher.find()){
 				numbers.put("work", matcher.group());
 				break;
 			}
